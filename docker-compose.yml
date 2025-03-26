@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: P@ssw0rd
+    ports:
+      - "3306:3306"
+    volumes:
+      - /Users/dongik/Desktop/dongik/Docker:/var/lib/mysql
